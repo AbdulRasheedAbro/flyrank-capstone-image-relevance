@@ -1,0 +1,12 @@
+name: flyrank-capstone-image-relevance
+track: backend
+stack: python-fastapi-postgresql-ollama
+run:
+  command: uvicorn app.main:app --reload
+seed:
+  command: python -m app.db.init_db
+test:
+  command: pytest -q
+evaluation:
+  command: python scripts/evaluate.py --input data/eval/eval_results.json
+base_url: http://localhost:8000

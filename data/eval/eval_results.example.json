@@ -1,0 +1,4 @@
+[
+  {"post_id": 1, "predicted_image": "red_fox.jpg", "expected_image": "red_fox.jpg"},
+  {"post_id": 2, "predicted_image": "wolf.jpg", "expected_image": "wolf.jpg"}
+]
